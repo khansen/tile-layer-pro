@@ -1,0 +1,67 @@
+
+    Palettes
+
+    Working with the palette should be pretty straightforward. Below is an
+    image of the palette editor, with a description of what each part does.
+
+    Each ROM loaded has its own customizable palette, with separate properties.
+    What palette is viewable/editable at one time depends on which ROM is
+    currently active. When you switch to another ROM window, the palette of
+    the new window is automatically loaded into the Palette Editor.
+
+    Use left mouse button to select a foreground color from the current palette,
+    right button to select background color.
+
+    The number of available colors depends on the bitdepth of the tile that
+    is being edited; 1-bit = 2 colors, 2-bit = 4 colors and so on.
+
+    Manipulate the Red, Green and Blue component of the current foreground color
+    by moving the respective colorbars, or by typing the values directly in the
+    accompanying textboxes.
+
+    Double-clicking on a palette entry lets you specify the color through the
+    standard Windows Color Dialog, just in case TLP's amazingly complex
+    colorbars and textboxes have you confused.
+
+    Tile Layer Pro uses a proprietary palette format, with the extension
+    .TPL. It can store up to 256 colors in the following formats: RGB, NES
+    and SNES/GBC. This means you can store several 4-color/16-color palettes
+    in the same palette file. The Up/Down buttons in the palette editor
+    lets you cycle through all the available palettes. This is convenient if
+    you're editing a file that uses several different palettes, and don't want
+    to manage 50 different palette files; you can store them all in one file
+    and easily switch between individual palettes.
+
+    When you load a ROM, TLP will automatically try to load a palette with
+    the same filename as the ROM, but with the extension .TPL. (Also, when you
+    save a palette, this is the default filename unless you specify a
+    different one from the Save Palette As dialog.) If TLP can't locate the
+    palette, a built-in default 256-color palette will be loaded instead.
+
+    Specifying the format of the palette is done from the Palette->Format
+    menu. The format ONLY affects how the palette is stored when it's saved
+    to disk; not how it is edited in the Palette Editor. A description of each
+    format follows:
+
+    RGB: 
+    Full 8 bits of Red, Green and Blue components are stored.
+    3 bytes per palette entry.
+
+    SNES/GBC:
+    5 bits of each component are stored, in the following format:
+    %0bbbbbgg %gggrrrrr (stored low byte first in file.)
+    2 bytes per palette entry.
+
+    NES:
+    Each entry in the palette is stored as the 6-bit NES color that
+    best matches the R,G,B components of the color.
+    1 bytes per palette entry.
+
+    Conversion between the formats is automatic; say you have a palette in
+    NES format and suddenly want to convert it to f.ex. RGB, then all you
+    have to do is select Palette->Format->RGB, and save the palette.
+
+    You can also specify the number of colors that your palette file actually
+    uses. Maybe you're only using the first 16 colors; then it would be
+    unforgiveable to store 256 entries, right? Select the proper setting
+    from the Palette->Entries menu.

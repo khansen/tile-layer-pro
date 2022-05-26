@@ -1,0 +1,38 @@
+
+    Viewing
+
+    Following are the keys that affect how you view a ROM. In addition to these,
+    the window has scrollbar functionality, but with it you can't finetune the
+    offset quite as well as you can with the keyboard. (Graphics aren't always
+    aligned on 8, 16 or 32-byte boundaries.)
+
+    Up/Down:        Row up/down.
+    Left/Right:     Tile left/right.
+    Minus/Plus:     Byte left/right.
+    Page Up:        Guess.
+    Page Down:      Guess again.
+    Home:           Beginning of ROM (offset 0).
+    End:            End of ROM.
+
+    Also, Ctrl+Left/Right does the same as Minus/Plus, in case you don't want
+    to stretch all the way to those keys.
+
+    Resizing a window
+
+    By default, the ROM window has 16 rows of 16 columns, but you might want to
+    view a file in a different resolution. You can resize the window either with
+    the mouse, or with the keyboard. To resize with the keyboard, hold down shift,
+    then press the arrow key in the direction you want to resize it in.
+
+    Changing the tile format
+
+    When you load a ROM, Tile Layer Pro will decide the default tile format
+    based on the extension of the filename. But some ROMs store graphics in
+    several different formats (f.ex., a lot of SNES games store 2BPP-graphics
+    in GameBoy format to save space), so there's an option to switch to a
+    different tile format at any time.
+
+    This can be done either from the View->Format menu, where there is a list
+    of all supported tile formats, or by pressing 1. Pressing 1 will cycle
+    through all the available formats. The currently selected format and its
+    bitdepth is indicated in the statusbar.

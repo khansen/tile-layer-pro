@@ -1,0 +1,16 @@
+
+    Exporting and importing bitmaps
+
+    The ability to export and import bitmaps means that you can edit the ROM
+    graphics in a normal paint program, then bring them back to the ROM and
+    encode them in the desired tile format. Currently only 8-bit uncompressed
+    Windows .BMPs are supported.
+
+    To export a bitmap, first select the area of the current ROM window you
+    wish to save. This is done by using the right mouse button to size the
+    desired tile grid. Then select Edit->Export Bitmap.
+
+    To import a bitmap, select Edit->Import Bitmap, and load the bitmap you
+    wish to import. The bitmap will be positioned in the upper left corner of
+    the current ROM window, and you can use the mouse to move it to the
+    desired position.

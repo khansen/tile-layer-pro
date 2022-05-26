@@ -1,0 +1,41 @@
+
+    Copying tiles
+
+    You can copy tiles from a ROM to another position in the same ROM, or from
+    one ROM to another. The format of the destination ROM does not have to be
+    the same as the source; Tile Layer Pro will automagically take care of the
+    necessary conversion. For example, if you copy tiles from a NES ROM to a
+    GameBoy ROM, the tiles will be encoded in GameBoy format, if you copy them
+    to a SNES ROM, they will be encoded in SNES format, and so on.
+
+    There are two ways to copy tiles: One tile at a time, or multiple tiles at
+    a time.
+
+    Copying one tile at a time:
+
+    Drag & drop. Click on the tile you wish to copy with the left mouse button,
+    then drag it to the desired position, either in the same ROM or in another
+    open ROM window. Drop the tile to encode it at that position.
+
+    You can only undo the last tiledrop that was performed, so be careful.
+
+    Copying multiple tiles at a time:
+
+    Use the right mouse button to select a tile grid to copy, by first clicking
+    the mouse in the upper left corner of the grid, then drag it to the desired
+    dimensions. The current selection is easily seen, as the colors of that area
+    will be inverted. Next, copy the selection with Ctrl+C (or by selecting Copy
+    from the Edit menu), then paste it in the desired window with Ctrl+V (Edit->Paste).
+    The image will be placed in the upper left corner of the window, and you can
+    now use the mouse to move it to the desired position (the mouse cursor will
+    change when you hold it over the image, indicating that it can be moved). To
+    encode the image, click the mouse outside of it. If you decide you don't want
+    to paste it after all, press ESC or DEL. (There is NO undo for the paste
+    operation!!)
+
+    Note about converting tile data between various formats: While there's no
+    problem converting a tile from a format with higher bitdepth than the
+    destination format, going the other will result in a loss of color data.
+    F.ex., since SNES tiles are 4-bit while NES tiles are only 2-bit, copying
+    a SNES tile to a NES ROM results in the upper 2 bits of color info in the
+    tile being lost.

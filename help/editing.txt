@@ -1,0 +1,19 @@
+
+    Tile Editing
+
+    The integrated Tile Editor looks like so:
+
+    Editing a tile is easy. Just click on it with the left mouse button, and a
+    zoomed version will pop up the Tile Editor. In the editor window, use the
+    left mouse button to draw with the current foreground color, right button
+    to draw with the background color. You can also flip the tile horizontally and
+    vertically, and rotate it 90 degrees clockwise. To prevent you from messing
+    up, there's a handy Undo button that can undo the last 64 tile operations,
+    for EACH open ROM.
+
+    You can also shift a tile one pixel in any direction, by holding down shift
+    and then pressing the arrow key that points in the desired direction.
+
+    When multiple files are open, the Tile Editor remembers which tile you edited
+    last in each ROM. So when you switch between ROMs, the editor will be reloaded
+    with the last tile that was edited in the newly selected ROM.

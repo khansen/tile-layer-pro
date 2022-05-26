@@ -1,0 +1,46 @@
+
+    Tile Arranger
+
+    This window, 24x16 tiles in size and with its own definable palette, is
+    shared among all open ROMs. Its main duty is to let you piece together
+    individual tiles in a fashion that makes them easier to see & edit:
+    Often tiles in ROMs are scattered in a way that makes them hard to
+    edit directly from ROM. For example, if 4 tiles are stored directly
+    next to each other in the ROM, forming a 4x1 grid, but are supposed to
+    form a 2x2 tile grid when you're playing the game, you can use the Tile
+    Arranger to line them up in such a manner.
+
+    Transfering tiles to the Arranger:
+
+    There are two ways to do this. One is to drag a tile from the ROM window
+    (with left mouse button) onto the arranger, and drop it at the position
+    where you want it. The second way is to select the tile from the ROM with
+    the left mouse button, then click right mouse button at the desired position
+    in the Arranger window.
+
+    Once the tile has been transfered to the Arranger, you can edit it just
+    like you would edit a tile directly from ROM: Left-click on the tile,
+    then use the Tile Editor to manipulate it.
+
+    Important to understand:
+
+    When you place a tile on the Arranger, you are NOT placing a physical copy
+    of the tile there. The Arranger doesn't really contain any graphics data at
+    all; only memory addresses to the tiles that are on it. That is, when you
+    edit the tile from the Arranger, the changes will take affect in the ROM
+    immediately. Also, if you place more than one instance of the same tile on
+    the Arranger, ALL instances will be updated when you draw on the tile;
+    this is logical, because they all share the same tile data in ROM.
+
+    (Note to old Tile Layer DOS users: The Tile Arranger is a relative of the
+    Clipboard, but does not function the same way. Tile Layer DOS copied the
+    actual tile data to the clipboard, while Tile Layer Pro copies only the
+    memory address of the tile. I implemented it this way because I think this
+    is MUCH better. Now you don't have to worry about forgetting to put the
+    tiles back in ROM after editing them (grrr... if I had a penny for every
+    time I did just that), and you don't have to figure out just where the heck
+    that tile really belongs either.)
+
+    When you close a ROM, any tiles belonging to that ROM will be removed from
+    the Tile Arranger. (Logical yet again, since the memory associated with the
+    Arranger's tile pointers is no longer valid.)

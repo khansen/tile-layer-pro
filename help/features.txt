@@ -1,0 +1,15 @@
+
+    - Formats: 1BPP, NES, GB, VB, NGPC, SNES (3BPP/4BPP), SMS, Genesis
+      (and a few others unofficially).
+    - Multiple-document interface; can have as many ROMs open
+      simultaneously as is allowed by system memory.
+    - Tile Arranger (tm), a window for arranging tiles in a desirable
+      fashion, making them easier to edit.
+    - Resizable windows (columns/rows can range from 8..64).
+    - Tile flip x/y, rotate 90 degrees, shift up/down/left/right.
+    - Copy & paste, drag & drop tiles between files.
+    - User-defined RGB, NES, GBC and SNES palettes for each ROM loaded,
+      and conversion between these formats.
+    - Can undo last 32 tile operations in each ROM window.
+    - Zoom in/out (1..4x).
+    - Goto offset (absolute/relative).
